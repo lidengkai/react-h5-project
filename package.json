@@ -1,0 +1,35 @@
+{
+  "name": "react-h5-project",
+  "version": "0.1.0",
+  "author": "lidengkai <lidengkai9487@163.com>",
+  "private": true,
+  "sideEffects": [
+    "./src/main.tsx",
+    "*.less"
+  ],
+  "scripts": {
+    "start": "npm run do:watch",
+    "dev": "npm run do:build --env_dev",
+    "test": "npm run do:build --env_test",
+    "prod": "npm run do:build",
+    "do:watch": "webpack server --config build/watch.js",
+    "do:build": "webpack --config build/build.js --progress",
+    "tsc": "tsc --watch"
+  },
+  "main": "",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/lidengkai/react-h5-project.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitee.com/lidengkai/react-h5-project/issues"
+  },
+  "homepage": "https://gitee.com/lidengkai/react-h5-project",
+  "dependencies": {
+    "antd-mobile": "~5.30.0",
+    "antd-mobile-icons": "~0.3.0"
+  }
+}
